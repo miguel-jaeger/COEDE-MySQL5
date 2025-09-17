@@ -1,7 +1,7 @@
 <?php
 
 require_once './modelo/Modelo.php';
-
+//ggggg
 class RevistaControlador {
     private $modelo;
 
