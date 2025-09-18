@@ -51,7 +51,10 @@ if ($post_action == 'crear') {
 } else if ($action == 'editar') {
     // Si no se especifica ninguna acción, muestra el formulario por defecto
     require_once './vista/editar.php';
-} else {
+}  else if ($action == 'registrar') {
+    // Si no se especifica ninguna acción, muestra el formulario por defecto
+    require_once './vista/Registro.php';
+}else {
     // Si la acción es 'listar' (viene de una petición GET)
     // Llama al método del Modelo para obtener los datos
     $revistas = $revista->listarRevistas();
