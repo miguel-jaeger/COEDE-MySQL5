@@ -1,0 +1,14 @@
+Problemas:
+. No entrego el script de la bd
+. sin nada de diseño
+. el editar no funciona
+
+
+Commits:
+letona2833657(8)
+jperaldoc-design(2)
+
+
+
+
+
