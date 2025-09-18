@@ -12,7 +12,7 @@ class Modelo {
 
     public function crearRevista($titulo, $editorial, $fechaPublicacion) {
         $sql = "INSERT INTO {$this->table_name} (titulo, editorial, fechaPublicacion) VALUES (?, ?, ?)";
-        $stmt = $this->conexion->prepare($sql);
+         $stmt = $this->conexion->prepare($sql);
         return $stmt->execute([$titulo, $editorial, $fechaPublicacion]);
     }
 
