@@ -3,8 +3,8 @@
 class Conexion {
     private $servidor = "localhost";
     private $usuario = "root";
-    private $contraseña = "";
-    private $nombre_bd = "revistas"; // Reemplaza con el nombre de tu base de datos
+    private $contraseña = "root";
+    private $nombre_bd = "db_revistas"; // Reemplaza con el nombre de tu base de datos
 
     public function conectar() {
         try {

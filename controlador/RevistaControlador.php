@@ -4,6 +4,12 @@ require_once './modelo/Modelo.php';
 
 class RevistaControlador {
     private $modelo;
+    // Declare properties here
+    public $titulo;
+    public $editorial;
+    public $fechaPublicacion;
+    public $id;
+    public $resumen;
 
     public function __construct() {
         $this->modelo = new Modelo();
@@ -41,6 +47,7 @@ class RevistaControlador {
             $titulo = $_POST['titulo'];
             $editorial = $_POST['editorial'];
             $fechaPublicacion = $_POST['fechaPublicacion'];
+            $resumen = $_POST['resumen'];
             $this->modelo->crearRevista($titulo, $editorial, $fechaPublicacion);
             header("Location: index.php?accion=listar");
             exit();
@@ -54,6 +61,7 @@ class RevistaControlador {
             $titulo = $_POST['titulo'];
             $editorial = $_POST['editorial'];
             $fechaPublicacion = $_POST['fechaPublicacion'];
+            $resumen = $_POST['resumen'];
             $this->modelo->actualizarRevista($id, $titulo, $editorial, $fechaPublicacion);
             header("Location: index.php?accion=listar");
             exit();
